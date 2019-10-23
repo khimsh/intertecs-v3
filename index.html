@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ინტერტექნიკსი</title>
+
+
+    <!-- Map dependencies -->
+    <script>
+        L_PREFER_CANVAS = false;
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+    <script asinc defer src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script asinc defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script asinc defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script asinc defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <!-- End Map dependencies -->
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/owl.carousel.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo-wrap">
+                <figure class="header__logo">
+                    <a href="/">
+                        <img src="images/logo.png" alt="ინტერტექნიკსი">
+                    </a>
+                </figure>
+                <h1 class="sr-only">ინტერტექნიკსი</h1>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <h2 class="sr-only">მთავარი მენიუ</h2>
+                    </li>
+                    <li><a href="#">პარტნიორი კომპანიები</a></li>
+                    <li><a href="#">ჩვენ შესახებ</a></li>
+                    <li><a href="#">კონტაქტი</a></li>
+                </ul>
+            </nav>
+        </div><!-- .header__container -->
+    </header><!-- header -->
+
+    <section class="hero">
+        <div class="owl-carousel carousel">
+            <div class="item"><img src="images/2.jpg" alt=""></div>
+            <div class="item"><img src="images/3.jpg" alt=""></div>
+            <div class="item"><img src="images/4.jpg" alt=""></div>
+        </div>
+
+        <div class="hero__overlay">
+            <h2>ინტერტექნიკსი</h2>
+            <p>უმაღლესი ხარისხის სამშენებლო ტექნიკა</p>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="section partners">
+            <h2 class="section__title">პარტნიორი კომპანიები</h2>
+
+            <div class="grid">
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/bobcat.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Bobcat
+                            <img src="images/bobcat-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>მინი სატვირთელები და ექსკავატორები, ტელესკოპური სატვირთელები და მათი დამხმარე
+                                მოწყობილობები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/bomag.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Bomag
+                            <img src="images/bomag-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ასფალტისა და გრუნტის სატკეპნები, ასფალტის დამგებები, ფრეზები, რესაიკლერები და გრუნტის
+                                სტაბილიზატორები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/marini.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Marini
+                            <img src="images/marini-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ასფალტის მობილური და სტაციონარული ქარხნები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/powerplus.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Powerplus
+                            <img src="images/powerplus-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ბორბლებიანი და მუხლუხა ექსკავატორები, ბორბლებიანი სატვირთელები (Loader), ბულდოზერები,
+                                მობილური და მუხლუხა ამწეები, ავტოთვითმცლელები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/hbm.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Hbm-Nobas
+                            <img src="images/hbm-nobas-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>სხვადასხვა ტიპისა და ზომის გრეიდერები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/putzmeister.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Putzmeister
+                            <img src="images/powerplus-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ბეტონის სტაციონარული, მობილური და გვირაბის ტუმბოები, ცემენტო-ქვიშის მიწოდებისა და სალესი
+                                ტუმბოები. ბეტონის მობილური მიქსერები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/terex-finlay.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Terex-Finlay
+                            <img src="images/terex-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>100–700 ტ/სთ წარმადობის მობილური, ყბებიანი და როტორული სამსხვრევები, მობილური სარეცხი
+                                ცხრილები და კლასიფიკატორები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/kaeser.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Kaeser Gmbh
+                            <img src="images/kaeser-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ჰაერის ინდუსტრიული დანიშნულების სტაციონარული და სამშენებლო დანიშნულების მობილური
+                                კომპრესორები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/ins-makina.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>
+                            Ins-Makina
+                            <img src="images/ins-makina-logo.png" alt="Bobcat Logo" class="logo">
+                        </h3>
+                        <div>
+                            <p>ბეტონის სტაციონარული და მობილური კვანძები, ქვა–ღორღის სარეცხი და დამხარისხებელი მობილური
+                                დანადგარები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.bobcat.com/cis/en/index" rel="noopener" target='_blank'>link to
+                            bobcat.com</a>
+                    </div>
+                </div><!-- .grid__item -->
+                <div class="grid__item">
+                    <figure>
+                        <img src="images/aliva.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h3>Aliva</h3>
+                        <div>
+                            <p>მინი სატვირთელები და ექსკავატორები, ტელესკოპური სატვირთელები და მათი დამხმარე
+                                მოწყობილობები.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://che.sika.com/aliva/en/index.html" rel="noopener" target='_blank'>link to
+                            aliva</a>
+                    </div>
+                </div><!-- .grid__item -->
+            </div>
+        </section>
+
+        <section class="section section--about">
+            <h2 class="section__title">ჩვენ შესახებ</h2>
+
+            <p>Intertechnics LTD-ის მთავარი მიზანია საბაზრო წილისა და კომპეტენტუნარიანობის შენარჩუნება ცვალებად ქართულ
+                ბაზარზე.</p>
+
+            <p>კომპანია პარტნიორობს მოწინავე საგზაო-სამშენებლო ტექნიკის მწარმოებელ ბრენდებთან 2005 წლიდან. ეს
+                ურთიერთობები უზრუნველყოფს ინოვაციებისა და უმაღლესი ხარისხის ტექნიკის შემოდინებას ქართულ სამშენებლო
+                სივრცეში.</p>
+
+            <p>პარტნიორობის პირველ ეტაპს არსებულ და პოტენციურ კლიენტებთან წარმოადგენს ინფორმაციის წვდომადობა და სანდოობა
+                მოთხოვნად პროდუქციაზე.</p>
+
+            <p>ჩვენი ჯგუფი დაკომპლექტებულია პროფესიონალებით, რომლებიც ყოველწლიურად გადიან გადამზადებას და იღრმავებენ
+                გამოცდილებას, უშუალოდ პარტნიორი ფირმების ეგიდით გამართულ ტრენინგებზე.</p>
+        </section>
+
+        <section class="section section--contact">
+            <h2 class="section__title">დაგვიკავშირდით</h2>
+
+            <ul class="address">
+                <li>85 ფალიაშვილის ქ. თბილისი, საქართველო</li>
+                <li>სერვის ცენტრი: კახეთის გ/ტ 106</li>
+                <li>6 პეტრე იბერის ქ. თბილისი, საქართველო</li>
+                <li>+995 (32) 2 45 04 56</li>
+                <li>intertecs@caucasus.net</li>
+            </ul>
+
+            <div class="folium-map" id="map_3f3901e7b2c14558bf4bf95d9246f404"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copy">&copy; 2004 &ndash; 2019 &mdash; Intertechnics LTD</div>
+    </footer>
+</body>
+
+</html>

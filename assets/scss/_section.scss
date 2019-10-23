@@ -1,0 +1,19 @@
+.section {
+    width: 1080px;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: 'BPG Algeti';
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-family: 'BPG Algeti';
+
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    background-color: #242424;
+
+    &__container {
+        width: 1080px;
+        margin: 0 auto;
+        padding: 10px 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        a {
+            display: block;
+        }
+
+        img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+    }
+}

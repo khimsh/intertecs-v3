@@ -1,0 +1,70 @@
+.hero {
+    width: 100%;
+    height: 85vh;
+
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    position: relative;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: multiply;
+
+        z-index: 100000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #eee;
+            font-size: 4rem;
+            letter-spacing: 8px;
+
+            font-family: 'BPG Algeti';
+        }
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            font-family: 'BPG Algeti';
+            color: #eee;
+        }
+    }
+}
+
+.carousel {
+    height: 100%;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.owl-stage-outer {
+    height: 100%;
+}
+
+.owl-stage {
+    height: 100%;
+}
+
+.owl-item {
+    height: 100%;
+}
