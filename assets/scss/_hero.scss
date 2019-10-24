@@ -38,6 +38,30 @@
             color: #eee;
         }
     }
+
+    &__cta {
+
+        &:link,
+        &:visited {
+            font-family: 'BPG Algeti';
+            font-size: 1.2rem;
+            display: inline-block;
+            padding: .4em 1em;
+            background: yellow;
+            color: #242424;
+            text-decoration: none;
+            margin-top: 30px;
+            border-radius: 2px;
+            transition: all .15s linear;
+        }
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+            background-color: rgb(245, 245, 91);
+            // color: #eee;
+        }
+    }
 }
 
 .carousel {

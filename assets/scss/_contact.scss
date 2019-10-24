@@ -2,9 +2,26 @@
     list-style-type: none;
 
     li {
-        font-size: 1.1rem;
-        margin-bottom: 7px;
-
         font-family: 'BPG Algeti';
+        font-size: 1.2rem;
+        color: #242424;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+        }
+
+        svg {
+            display: inline-block;
+            margin-right: 8px;
+            fill: #6e6e6e;
+            width: 18px;
+        }
     }
 }

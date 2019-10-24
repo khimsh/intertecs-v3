@@ -90,6 +90,20 @@ img {
       font-weight: 500;
       font-family: 'BPG Algeti';
       color: #eee; }
+  .hero__cta:link, .hero__cta:visited {
+    font-family: 'BPG Algeti';
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: .4em 1em;
+    background: yellow;
+    color: #242424;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 2px;
+    transition: all .15s linear; }
+  .hero__cta:hover, .hero__cta:active {
+    text-decoration: none;
+    background-color: #f5f55b; }
 
 .carousel {
   height: 100%; }
@@ -128,9 +142,22 @@ img {
 .address {
   list-style-type: none; }
   .address li {
-    font-size: 1.1rem;
-    margin-bottom: 7px;
-    font-family: 'BPG Algeti'; }
+    font-family: 'BPG Algeti';
+    font-size: 1.2rem;
+    color: #242424;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .address li a {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit; }
+    .address li svg {
+      display: inline-block;
+      margin-right: 8px;
+      fill: #6e6e6e;
+      width: 18px; }
 
 .grid {
   width: 100%;
