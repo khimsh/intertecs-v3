@@ -27,8 +27,15 @@
             color: #eee;
             font-size: 4rem;
             letter-spacing: 8px;
-
             font-family: 'BPG Algeti';
+
+            @media only screen and (max-width: 720px) {
+                font-size: 3rem;
+            }
+
+            @media only screen and (max-width: 520px) {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -36,6 +43,15 @@
             font-weight: 500;
             font-family: 'BPG Algeti';
             color: #eee;
+
+            @media only screen and (max-width: 720px) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: 520px) {
+                font-size: 1.05rem;
+                margin-left: -9px;
+            }
         }
     }
 
@@ -59,11 +75,12 @@
         &:active {
             text-decoration: none;
             background-color: rgb(245, 245, 91);
-            // color: #eee;
         }
     }
 }
 
+
+// Carousel Styles
 .carousel {
     height: 100%;
 }
@@ -71,7 +88,6 @@
 .item {
     height: 100%;
     width: 100%;
-
     overflow: hidden;
 
     img {
