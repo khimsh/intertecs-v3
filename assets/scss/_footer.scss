@@ -1,8 +1,11 @@
 .footer {
     padding: 10px 0;
+    background-color: #fcfc62;
 
     &__copy {
         text-align: center;
         font-size: 1rem;
+        color: #242424;
+        font-family: 'Lato', sans-serif;
     }
 }

@@ -40,12 +40,17 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-  .header__logo a {
-    display: block; }
-  .header__logo img {
-    height: 50px;
-    width: auto;
-    display: block; }
+    @media only screen and (max-width: 1100px) {
+      .header__container {
+        width: 90vw; } }
+  .header__logo {
+    margin: 0; }
+    .header__logo a {
+      display: block; }
+    .header__logo img {
+      height: 50px;
+      width: auto;
+      display: block; }
 
 .nav ul {
   display: flex;
@@ -54,18 +59,21 @@ img {
   margin-bottom: 0; }
 .nav li:not(:last-child) {
   margin-right: 40px; }
-.nav a:link, .nav a:active {
+.nav a:link, .nav a:visited {
   font-family: 'BPG Algeti';
+  font-size: 1.1rem;
   color: #eee;
   text-decoration: none;
-  font-size: 1.1rem;
-  display: block; }
+  display: block;
+  transition: all .1s linear; }
+.nav a:hover, .nav a:active {
+  color: #fffeaf; }
 
 .hero {
   width: 100%;
   height: 85vh;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   position: relative; }
   .hero__overlay {
     position: absolute;
@@ -129,7 +137,10 @@ img {
 .section {
   width: 1080px;
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 1100px) {
+    .section {
+      width: 90vw; } }
   .section__title {
     font-size: 2.5rem;
     font-family: 'BPG Algeti';
@@ -140,7 +151,8 @@ img {
     margin-bottom: 10px; }
 
 .address {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-bottom: 40px; }
   .address li {
     font-family: 'BPG Algeti';
     font-size: 1.2rem;
@@ -168,7 +180,10 @@ img {
   .grid__item {
     padding: 15px;
     background-color: #fcfc62;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr; }
     .grid__item figure {
       height: 200px; }
       .grid__item figure img {
@@ -176,21 +191,38 @@ img {
         width: 100%;
         object-fit: cover;
         object-position: center; }
+    .grid__item > div {
+      display: flex;
+      flex-direction: column; }
     .grid__item h3 {
       color: #242424;
+      font-family: 'Lato', sans-serif;
       font-size: 2rem;
-      margin-top: 10px; }
+      margin-top: 10px;
+      display: flex;
+      align-items: center; }
+      .grid__item h3 img {
+        margin-left: 5px; }
     .grid__item p {
       font-family: 'BPG Algeti'; }
-    .grid__item a {
-      margin-top: 10px;
+    .grid__item a:link, .grid__item a:visited {
+      margin-top: auto;
       display: block;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      font-family: 'Lato', sans-serif;
+      color: #242424;
+      text-decoration: underline;
+      transition: all .1s linear; }
+    .grid__item a:hover, .grid__item a:active {
+      color: #0344a7; }
 
 .footer {
-  padding: 10px 0; }
+  padding: 10px 0;
+  background-color: #fcfc62; }
   .footer__copy {
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1rem;
+    color: #242424;
+    font-family: 'Lato', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

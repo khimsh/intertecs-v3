@@ -3,9 +3,7 @@
     ul {
         display: flex;
         flex-direction: row;
-
         list-style-type: none;
-
         margin-bottom: 0;
     }
 
@@ -19,12 +17,18 @@
     a {
 
         &:link,
-        &:active {
+        &:visited {
             font-family: 'BPG Algeti';
+            font-size: 1.1rem;
             color: #eee;
             text-decoration: none;
-            font-size: 1.1rem;
             display: block;
+            transition: all .1s linear;
+        }
+
+        &:hover,
+        &:active {
+            color: rgb(255, 254, 175);
         }
     }
 }

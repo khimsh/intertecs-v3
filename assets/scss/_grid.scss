@@ -8,8 +8,12 @@
 
     &__item {
         padding: 15px;
-        background-color: rgb(252, 252, 98);
+        background-color: #fcfc62;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
 
         figure {
             height: 200px;
@@ -22,11 +26,22 @@
             }
         }
 
+        &>div {
+            display: flex;
+            flex-direction: column;
+        }
+
         h3 {
             color: #242424;
+            font-family: 'Lato', sans-serif;
             font-size: 2rem;
-
             margin-top: 10px;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 5px;
+            }
         }
 
         p {
@@ -34,9 +49,22 @@
         }
 
         a {
-            margin-top: 10px;
-            display: block;
-            font-size: 1.1rem;
+
+            &:link,
+            &:visited {
+                margin-top: auto;
+                display: block;
+                font-size: 1.1rem;
+                font-family: 'Lato', sans-serif;
+                color: #242424;
+                text-decoration: underline;
+                transition: all .1s linear;
+            }
+
+            &:hover,
+            &:active {
+                color: #0344a7;
+            }
         }
     }
 }
