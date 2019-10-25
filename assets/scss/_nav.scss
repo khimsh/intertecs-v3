@@ -48,15 +48,19 @@
         &:visited {
             font-family: 'BPG Algeti';
             font-size: 1.1rem;
-            color: #eee;
             text-decoration: none;
+
+            background-color: #fcfc62;
+            color: #242424;
+            padding: .3em .5em;
+            border-radius: 2px;
             display: block;
             transition: all .1s linear;
         }
 
         &:hover,
         &:active {
-            color: rgb(255, 254, 175);
+            background-color: rgb(255, 254, 175);
         }
     }
 }

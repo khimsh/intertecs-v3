@@ -17,6 +17,9 @@ body {
 img {
   max-width: 100%; }
 
+.eng {
+  font-family: 'Lato' !important; }
+
 .sr-only {
   position: absolute;
   z-index: -1000000;
@@ -44,6 +47,9 @@ img {
       height: 50px;
       width: auto;
       display: block; }
+      @media only screen and (max-width: 520px) {
+        .header__logo img {
+          height: 40px; } }
 
 .nav {
   margin-left: auto; }
@@ -72,12 +78,15 @@ img {
   .language a:link, .language a:visited {
     font-family: 'BPG Algeti';
     font-size: 1.1rem;
-    color: #eee;
     text-decoration: none;
+    background-color: #fcfc62;
+    color: #242424;
+    padding: .3em .5em;
+    border-radius: 2px;
     display: block;
     transition: all .1s linear; }
   .language a:hover, .language a:active {
-    color: #fffeaf; }
+    background-color: #fffeaf; }
 
 .hero {
   width: 100%;
@@ -104,12 +113,19 @@ img {
       letter-spacing: 10px;
       font-family: 'BPG Algeti';
       margin-bottom: 20px; }
+      .hero__overlay h2.eng {
+        letter-spacing: 4px;
+        text-transform: uppercase; }
       @media only screen and (max-width: 720px) {
         .hero__overlay h2 {
           font-size: 3rem; } }
       @media only screen and (max-width: 520px) {
         .hero__overlay h2 {
           font-size: 2rem; } }
+      @media only screen and (max-width: 400px) {
+        .hero__overlay h2 {
+          font-size: 1.6rem;
+          letter-spacing: 2px; } }
     .hero__overlay p {
       font-size: 1.7rem;
       font-weight: normal;
@@ -117,6 +133,21 @@ img {
       color: #eee;
       letter-spacing: 1px;
       margin-left: -10px; }
+      .hero__overlay p.eng {
+        font-size: 1.8rem;
+        letter-spacing: 5px; }
+        @media only screen and (max-width: 720px) {
+          .hero__overlay p.eng {
+            font-size: 1.4rem; } }
+        @media only screen and (max-width: 520px) {
+          .hero__overlay p.eng {
+            font-size: 1.05rem;
+            margin-left: -9px; } }
+        @media only screen and (max-width: 400px) {
+          .hero__overlay p.eng {
+            margin: 0;
+            letter-spacing: 0;
+            font-size: 1.1rem; } }
       @media only screen and (max-width: 720px) {
         .hero__overlay p {
           font-size: 1.4rem; } }
@@ -124,6 +155,10 @@ img {
         .hero__overlay p {
           font-size: 1.05rem;
           margin-left: -9px; } }
+      @media only screen and (max-width: 400px) {
+        .hero__overlay p {
+          margin: 0;
+          font-size: .85rem; } }
   .hero__cta:link, .hero__cta:visited {
     font-family: 'BPG Algeti';
     font-size: 1.2rem;
@@ -138,6 +173,8 @@ img {
   .hero__cta:hover, .hero__cta:active {
     text-decoration: none;
     background-color: #f5f55b; }
+  .hero__cta.eng:link, .hero__cta.eng:visited {
+    font-weight: 500; }
 
 .carousel {
   height: 100%; }
@@ -174,6 +211,9 @@ img {
     @media only screen and (max-width: 720px) {
       .section__title {
         font-size: 2rem; } }
+    @media only screen and (max-width: 400px) {
+      .section__title {
+        font-size: 1.5rem; } }
   .section p {
     font-size: 1.1rem;
     font-family: 'BPG Algeti';
@@ -190,6 +230,9 @@ img {
     display: flex;
     flex-direction: row;
     align-items: flex-start; }
+    @media only screen and (max-width: 400px) {
+      .address li {
+        font-size: 1.1rem; } }
     .address li a {
       font-family: inherit;
       font-size: inherit;
@@ -214,6 +257,9 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   column-gap: 20px;
   row-gap: 20px; }
+  @media only screen and (max-width: 400px) {
+    .grid {
+      grid-template-columns: 1fr; } }
   .grid__item {
     padding: 15px;
     background-color: #fcfc62;
@@ -238,6 +284,9 @@ img {
       margin-top: 10px;
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 400px) {
+        .grid__item h3 {
+          font-size: 1.5rem; } }
       .grid__item h3 img {
         margin-left: 5px; }
     .grid__item p {

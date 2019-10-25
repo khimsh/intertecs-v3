@@ -12,6 +12,10 @@
         flex-direction: row;
         align-items: flex-start;
 
+        @media only screen and (max-width: 400px) {
+            font-size: 1.1rem;
+        }
+
         a {
             font-family: inherit;
             font-size: inherit;
