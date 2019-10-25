@@ -89,3 +89,7 @@ $('.owl-carousel').owlCarousel({
     { sticky: true }
   );
 })();
+
+// Update footer current year
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').innerText = currentYear;
