@@ -1,42 +1,48 @@
 .address {
-    list-style-type: none;
-    margin-bottom: 40px;
+  list-style-type: none;
+  margin-bottom: 40px;
 
-    li {
-        font-family: 'BPG Algeti';
-        font-size: 1.2rem;
-        color: #242424;
-        margin-bottom: 10px;
+  li {
+    font-family: "BPG Algeti";
+    font-size: 1rem;
+    color: #242424;
+    margin-bottom: 10px;
 
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 
-        @media only screen and (max-width: 400px) {
-            font-size: 1.1rem;
-        }
-
-        a {
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
-        }
-
-        svg {
-            display: inline-block;
-            margin-right: 8px;
-            fill: #6e6e6e;
-            width: 18px;
-        }
+    @media only screen and (max-width: 400px) {
+      font-size: 1.1rem;
     }
+
+    a {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: bold;
+      text-decoration: underline;
+      color: rgb(9, 9, 141);
+    }
+
+    svg {
+      display: inline-block;
+      margin-right: 8px;
+      fill: #6e6e6e;
+      width: 18px;
+    }
+
+    span {
+      margin-right: 8px;
+    }
+  }
 }
 
 .folium-map {
-    position: relative;
-    width: 100%;
-    height: 439px;
-    left: 0%;
-    top: 0%;
+  position: relative;
+  width: 100%;
+  height: 439px;
+  left: 0%;
+  top: 0%;
 
-    border: 1px solid rgb(194, 194, 194);
+  border: 1px solid rgb(194, 194, 194);
 }
