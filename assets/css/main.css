@@ -111,7 +111,7 @@ img {
   transition: all 0.1s linear;
 }
 .nav a:hover, .nav a:active {
-  color: #fffeaf;
+  color: rgb(255, 254, 175);
 }
 
 .language {
@@ -129,7 +129,7 @@ img {
   transition: all 0.1s linear;
 }
 .language a:hover, .language a:active {
-  background-color: #fffeaf;
+  background-color: rgb(255, 254, 175);
 }
 
 .hero {
@@ -241,7 +241,7 @@ img {
 }
 .hero__cta:hover, .hero__cta:active {
   text-decoration: none;
-  background-color: #f5f55b;
+  background-color: rgb(245, 245, 91);
 }
 .hero__cta.eng:link, .hero__cta.eng:visited {
   font-weight: 500;
@@ -328,7 +328,7 @@ img {
   font-size: inherit;
   font-weight: bold;
   text-decoration: underline;
-  color: #09098d;
+  color: rgb(9, 9, 141);
 }
 .address li svg {
   display: inline-block;
@@ -346,7 +346,7 @@ img {
   height: 439px;
   left: 0%;
   top: 0%;
-  border: 1px solid #c2c2c2;
+  border: 1px solid rgb(194, 194, 194);
 }
 
 .grid {
@@ -410,6 +410,7 @@ img {
   color: #242424;
   text-decoration: underline;
   transition: all 0.1s linear;
+  word-break: break-all;
 }
 .grid__item a:hover, .grid__item a:active {
   color: #0344a7;
